@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Expires" content="Fri, Jan 01 1900 00:00:00 GMT">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Lang" content="en">
+<meta name="author" content="">
+<meta http-equiv="Reply-to" content="@.com">
+<meta name="generator" content="PhpED 8.0">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="creation-date" content="09/06/2012">
+<meta name="revisit-after" content="15 days">
+<link rel="shortcut icon" href="rules.ico" type="image/x-icon">
+<title>Rules</title>
+<script type="text/javascript" src="rules.js"></script>
+<style>
+body,html {margin:0; padding:0; background: #111; color:white;}
+#objective {
+    font-family: Arial;
+    font-size: 35px;
+    text-align: center;
+}
+#status0 {
+    width:100%;
+}
+#status1 {
+    font-family: Arial;
+    font-size: 25px;
+    text-align: left;
+}
+#status2 {
+    font-family: Arial;
+    font-size: 25px;
+    text-align: right;
+    color: #EEE;
+}
+#stats {
+    font-family: Arial;
+    font-size: 20px;
+    text-align: right;
+    vertical-align: top;
+    padding-top: 20px;
+    padding-right:20px; 
+}
+.cred {
+    color: #c14747;
+}
+#highscores td {
+    font-size: 16px;
+    color: #EEE;
+    padding: 2px;
+}
+#highscores th {
+    font-size: 18px;
+    color: #FFF;
+    padding: 2px;
+}
+</style>
+</head>
+<body onload="begin()">
+<center>
+<table>
+    <tr>
+        <td width="200">&nbsp;</td>
+        <td id="objective">
+        </td>
+        <td width="200">&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="200">&nbsp;</td>
+        <td id="status">
+        </td>
+        <td width="200">&nbsp;</td>
+    </tr>
+    <tr>
+        <td id="stats" width="200">
+            <h3>Statistics</h3>
+            Wins: <span id="swin">-</span><br>
+            Loses: <span id="sloss">-</span><br>
+            Rate: <span id="srate">-</span><br>
+            Difficulty: <span id="sdiff">-</span><br>
+            Top difficulty: <span id="sbdiff">-</span><br><br><br>
+            <h3>Highscores</h3>
+            <div id="highscores"></div>
+        </td>
+        <td id="main" colspan="2">
+            <canvas id="game" width="800" height="600"></canvas>
+        </td>
+    </tr>
+</table>
+</center> 
+</body>
+</html>
