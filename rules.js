@@ -132,7 +132,7 @@ function start() {
     for (var i=0; i<G_SIZE; ++i) {
         cGrid[i]=[];
         for (var j = 0; j<G_SIZE; ++j) {
-            cGrid[i][j]=(Math.round(Math.random()*100)%5==1)?1:0;    
+            cGrid[i][j]=Math.round(Math.random());    
         }
     }
     // reset rules
